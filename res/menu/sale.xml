@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wit.salelocator.SaleActivity" >
+    
+    
+    
+    
+    
+<!--         <item
+        android:id="@+id/currentLocation"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/currentLocation"
+        android:icon="@drawable/ic_cl"
+        android:onClick="currentLocation"/>   -->
+    
+        
+    <item 
+        android:id="@+id/xml_login"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/xml_login"/>    
+        
+    
+    
+    <item
+        android:id="@+id/Control_Panel"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Control_Panel"/>
+   
+
+    
+
+
+</menu>

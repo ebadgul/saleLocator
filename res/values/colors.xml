@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txtColor">#3300FF</color>
+    <color name="bgColor">#8EFEAC</color>
+    <color name="btnColor">#B29DF2</color>
+</resources>

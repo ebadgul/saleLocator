@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sale Locator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Control_Panel">Conrtol Panel</string>
+    <string name="logout">Log out</string>
+    <!-- <string name="currentLocation">Current Location</string> -->
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="xml_login">Login</string>
+    <string name="link_to_login">Register New Account</string>
+    <string name="link_to_register">New to Sale Locator? Register here</string>
+    <string name="regNewAccounthere">Already has account? Login</string>
+    <string name="btnLogin">Login</string>
+    
+    <string name="settings">Settings</string>
+
+    <!-- register from strings -->
+    <!--
+    <string name="regUserName"></string>
+	<string name="regShopName">Shop Name</string>
+	<string name="regAddress">Shop Address</string>
+	<string name="regChooseLoc">Select Your Location</string>
+    -->
+    <string name="regUserName">User Name (unique)</string>
+    <string name="regShopName">Shop Name</string>
+    <string name="regShopAddress">Shop Address</string>
+    <string name="regPickurLoc">Choose Your Location on The Map</string>
+    <string name="regPassword">Password</string>
+    <string name="regConfirmPassword">Confirm Password</string>
+    <string name="regNewAccount">Register</string>
+    <string name="title_activity_set_location">Set Location</string>
+    <string name="title_activity_shop_controll">Shop Control</string>
+    <string name="controlUserName">Your Name</string>
+    <string name="controlShopName">Your Shop Name</string>
+    <string name="controlShopAddress">Your Shop Address</string>
+    <string name="controlTurnOnOrOff">Turn on or off the marker</string>
+    <string name="controlGoToFirstScreen">Go to the map screen</string>
+
+</resources>

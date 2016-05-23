@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor" >
+
+         <!-- start of Registration Form -->
+            
+        
+        <!-- End of Registration Form -->
+
+            <EditText
+                android:id="@+id/regUserFirstPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/regUserConfirsword"
+                android:layout_alignEnd="@+id/regUserConfirsword"
+                android:layout_below="@+id/regPassword"
+                android:ems="10"
+                android:inputType="numberPassword" />
+
+             <EditText
+                 android:id="@+id/regUserConfirmPassword"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignStart="@+id/imageView1" 
+                 android:layout_alignEnd="@+id/regPickurLoc"
+                 android:layout_below="@+id/regUserFirstPassword"
+                 android:layout_marginTop="16dp"
+                 android:ems="10"
+                 android:inputType="numberPassword" />
+
+             <TextView
+                 android:id="@+id/regUserConfirsword"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignEnd="@+id/regUserConfirmPassword"
+                 android:layout_alignStart="@+id/regUserConfirmPassword"
+                 android:layout_below="@+id/regUserFirstPassword"
+                 android:text="@string/regConfirmPassword"
+                 android:typeface="monospace" />
+             
+              <!-- <Button
+                 android:id="@+id/regNewAccount"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/regUserFirstPassword"
+                 android:layout_marginTop="53dp"
+                 android:text="@string/regNewAccount" /> -->
+
+              <TextView
+                  android:id="@+id/regPickurLoc"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentEnd="true"
+                  android:layout_below="@+id/regUserConfirmPassword"
+                  android:layout_marginEnd="28dp"
+                  android:layout_marginTop="40dp"
+                  android:textIsSelectable="true"
+	              android:clickable="true"
+                  android:height="@dimen/height"
+                  android:state_activated="true"
+                  android:state_focused="false"
+                  android:state_pressed="false"
+                  android:state_selected="true"
+                  android:text="@string/regPickurLoc"
+                  android:textColor="#025f7c"
+                  android:textStyle="bold"
+                  android:color="#000000" />
+
+              <ImageView
+                  android:id="@+id/imageView1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignBottom="@+id/regPickurLoc"
+                  android:layout_toStartOf="@+id/regPickurLoc"
+                  android:src="@drawable/ic_location" />
+              
+
+
+              <TextView
+                  android:id="@+id/regUserName"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignEnd="@+id/regUserNameInput"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignStart="@+id/regUserNameInput"
+                  android:layout_marginTop="15dp"
+                  android:text="@string/regUserName"
+                  android:typeface="monospace" />
+
+              <EditText
+                  android:id="@+id/regUserNameInput"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignStart="@+id/regShopName"
+                  android:layout_alignEnd="@+id/regShopName"
+                  android:layout_below="@+id/regUserName"
+                  android:ems="10"
+                  android:inputType="textPersonName" >
+
+                  <requestFocus />
+              </EditText>
+
+              <TextView
+                  android:id="@+id/regShopName"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignStart="@+id/regshopNameInput" 
+                  android:layout_alignEnd="@+id/regshopNameInput"
+                  android:layout_below="@+id/regUserNameInput"
+                  android:text="@string/regShopName"
+                  android:typeface="monospace" />
+
+              <EditText
+                  android:id="@+id/regshopNameInput"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignStart="@+id/regShopAddress"
+                  android:layout_alignEnd="@+id/regShopAddress"
+                  android:layout_below="@+id/regShopName"
+                  android:ems="10"
+                  android:inputType="textPersonName" />
+
+              <TextView
+                  android:id="@+id/regShopAddress"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignEnd="@+id/regShopAddressInput"
+                  android:layout_alignStart="@+id/regShopAddressInput"
+                  android:layout_below="@+id/regshopNameInput"
+                  android:text="@string/regShopAddress"
+                  android:typeface="monospace" />
+
+              <EditText
+                  android:id="@+id/regShopAddressInput"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignStart="@+id/regPassword"
+                  android:layout_alignEnd="@+id/regPassword"
+                  android:layout_below="@+id/regShopAddress"
+                  android:ems="10"
+                  android:inputType="textPostalAddress" />
+
+              <TextView
+                  android:id="@+id/regPassword"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignEnd="@+id/regUserFirstPassword"
+                  android:layout_alignStart="@+id/regUserFirstPassword"
+                  android:layout_below="@+id/regShopAddressInput"
+                  android:text="@string/regPassword"
+                  android:typeface="monospace" />
+
+              <TextView
+                  android:id="@+id/link_to_login"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignStart="@+id/imageView1"
+                  android:layout_below="@id/regPickurLoc"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignEnd="@+id/regPickurLoc"
+                  android:layout_marginTop="20dip"
+                  android:layout_marginBottom="30dp"
+                  android:gravity="center"
+                  android:text="@string/regNewAccounthere"
+                  android:textColor="#025f7c"
+                  android:textSize="20sp" />
+            
+    </RelativeLayout>
+
+</ScrollView>

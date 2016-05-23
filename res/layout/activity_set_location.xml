@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context="com.wit.salelocator.SetLocation" >
+    
+   <fragment
+       android:id="@+id/setLocationMap"
+       android:name="com.google.android.gms.maps.MapFragment"
+       android:layout_width="match_parent"
+       android:layout_height="390dip" />
+
+<!-- <Switch
+    android:id="@+id/on_off_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setLocationMap"
+    android:layout_centerHorizontal="true"
+    android:textOff="OFF"
+    android:textOn="ON" /> -->
+
+<Button
+    android:id="@+id/regNewAccount"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="5dip"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignStart="@+id/setLocationMap"
+    android:layout_below="@+id/setLocationMap"
+    android:background="@color/btnColor"
+    android:height="@dimen/activity_horizontal_margin"
+    android:maxLines="@integer/google_play_services_version"
+    android:text="@string/regNewAccount"
+    android:textSize="@dimen/activity_vertical_margin"
+    android:textStyle="bold"
+    android:typeface="monospace" />
+
+</RelativeLayout>

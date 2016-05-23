@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wit.salelocator.ShopControl" >
+
+    <EditText
+        android:id="@+id/showUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:layout_marginTop="20dp" />
+
+     <EditText
+        android:id="@+id/showShopAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/showShopName"
+        android:layout_alignEnd="@+id/showShopName"
+        android:layout_below="@+id/showShopName"
+        android:focusable="false"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/showUserName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/showUserName"
+        android:text="@string/controlUserName"
+        android:textColor="@color/txtColor"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/showShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/showShopName"
+        android:layout_alignStart="@+id/showShopName"
+        android:layout_marginTop="15dp"
+        android:text="@string/controlShopAddress"
+        android:textColor="@color/txtColor"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/showShopAddress"
+        android:layout_below="@+id/showShopAddress"
+        android:layout_marginTop="14dp"
+        android:text="@string/controlTurnOnOrOff"
+        android:textColor="@color/txtColor"
+        android:typeface="monospace" />
+
+    <Switch
+        android:id="@+id/on_off_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/showUserName"
+        android:layout_alignStart="@+id/showUserName"
+        android:layout_below="@+id/showUserName"
+        android:layout_marginTop="14dp"
+        android:text="@string/controlShopName"
+        android:textColor="@color/txtColor"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/showShopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/goToMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/on_off_switch"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="19dp"
+        android:onClick="goToMap"
+        android:src="@drawable/ic_set_location" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_below="@id/on_off_switch"
+        android:paddingTop="7dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goToMap"
+        android:layout_alignEnd="@+id/showShopAddress"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="15dp"
+        android:text="@string/controlGoToFirstScreen"
+        android:textColor="@color/txtColor"
+        android:typeface="monospace" />
+
+</RelativeLayout>
